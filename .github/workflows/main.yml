@@ -1,0 +1,14 @@
+on: push
+
+jobs:
+  evaluator_job:
+    runs-on: ubuntu-18.04
+    name: Evaluator Job
+    steps:
+      - uses: actions/checkout@v2
+      - name: Evaluator Step
+        uses: betrybe/mysql-evaluator-action@create-mysql-evaluator-action
+        id: evaluator
+        with:
+          repository-test-name: ''
+          repository-test-branch: ''
