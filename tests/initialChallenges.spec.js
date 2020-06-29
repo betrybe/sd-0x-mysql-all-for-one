@@ -3,7 +3,11 @@ const { Sequelize } = require('sequelize');
 
 let sequelize;
 
-beforeAll(() => sequelize = new Sequelize('mysql://root:@localhost:3306/northwind'));
+beforeAll(() =>
+  sequelize = new Sequelize(
+    `mysql://${process.env.MYSQL_USER}:${process.env.MYSQL_PASSWORD}@localhost:3306/northwind`
+  )
+);
 afterAll(() => sequelize.close());
 
 describe('Exiba apenas os nomes do produtos na tabela `products`', () => {
