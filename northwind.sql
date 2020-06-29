@@ -545,9 +545,9 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
---------------------------------------------------
+-- ------------------------------------------------
 -- INSERTING DATA
----------------------------------------------------
+-- -------------------------------------------------
 #
 # Converted from MS Access 2010 Northwind database (northwind.accdb) using
 # Bullzip MS Access to MySQL Version 5.1.242. http://www.bullzip.com
@@ -561,8 +561,8 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 #   range limitation (1997 - 2038 UTC), and other limitations.
 # * unique and foreign key checks disabled while loading data
 #
-#------------------------------------------------------------------
-#
+-- ----------------------------------------------------------------
+
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
