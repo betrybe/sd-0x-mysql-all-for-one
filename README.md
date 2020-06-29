@@ -128,11 +128,11 @@ Monte queries para encontrar as seguintes informações:
 12. Mostre as `submitted_date` de `purchase_orders` em que a `submitted_date` é do dia 26 de abril de 2006.
 13. Mostre o `supplier_id` das `purchase_orders` em que o `supplier_id` seja 1 ou 3.
 14. Mostre os `supplier_id` da `purchase_orders` em que o `supplier_id` seja de 1 a 3, incluindo tanto o 1 quanto o 3.
-15. Mostre somente as horas (sem os minutos e os segundos) da `submitted_date` de todos registros de `purchase_orders`.
+15. Mostre somente as horas (sem os minutos e os segundos) da `submitted_date` de todos registros de `purchase_orders`. Chame essa coluna de `submitted_hour`.
 16. Exiba a `submitted_date` das `purchase_orders` que estão entre `2006-01-26 00:00:00` e `2006-03-31 23:59:59`.
 17. Mostre os registros das colunas `id` e `supplier_id` das `purchase_orders` em que os `supplier_id` sejam tanto 1, ou 3, ou 5, ou 7.
 18. Mostre todos os registros de `purchase_orders` que tem o `supplier_id` igual a 3 e `status_id` igual a 2.
-19. Quantos pedidos foram feitos na tabela `orders` pelo `employee_id` igual a 5 ou 6, e que foram enviados através do método `shipper_id` igual a 2?
+19. Quantos pedidos foram feitos na tabela `orders` pelo `employee_id` igual a 5 ou 6, e que foram enviados através do método `shipper_id` igual a 2? Chame a coluna de orders_count.
 
 ---
 
