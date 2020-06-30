@@ -5,7 +5,7 @@ let sequelize;
 
 beforeAll(() =>
   sequelize = new Sequelize(
-    `mysql://${process.env.MYSQL_USER}:${process.env.MYSQL_PASSWORD}@localhost:3306/northwind`
+    `mysql://${process.env.MYSQL_USER}:${process.env.MYSQL_PASSWORD}@${process.env.HOSTNAME}:3306/northwind`
   )
 );
 afterAll(() => sequelize.close());
