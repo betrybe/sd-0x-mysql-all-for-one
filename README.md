@@ -136,13 +136,13 @@ Monte queries para encontrar as seguintes informações:
 
 ---
 
-## Desafios Manipulação de tabelas
+## Desafios de manipulação de tabelas
 
 20. Adicione ao `order_details` uma linha com os seguintes dados: `order_id`: 69, `product_id`: 80, `quantity`: 15.0000, `unit_price`: 15.0000, `discount`: 0, `status_id`: 2, `date_allocated`: NULL, `purchase_order_id`: NULL e `inventory_id`: 129. Obs.: o `id` deve ser incrementado automaticamente.
 21. Adicione, com um único `INSERT`, duas linhas ao `order_details` com os mesmos dados. Esses dados são novamente `order_id`: 69, `product_id`: 80, `quantity`: 15.0000, `unit_price`: 15.0000, `discount`: 0, `status_id`: 2, `date_allocated`: NULL, `purchase_order_id`: NULL e `inventory_id`: 129 (o `ìd` deve ser incrementado automaticamente).
 22. Atualize os dados de `discount` do `order_details` para 15.
 23. Atualize os dados de `discount` da tabela `order_details` para 30 cuja `unit_price` seja menor que 10.0000.
-24. Atualize os dados de discount da tabela `order_details` para 45 cuja `unit_price` seja maior que 10.0000 e o id seja um número entre 30 a 40.
+24. Atualize os dados de `discount` da tabela `order_details` para 45 cuja `unit_price` seja maior que 10.0000 e o id seja um número entre 30 a 40.
 25. Delete todos os dados em que a `unit_price` da tabela `order_details` seja menor que 10.0000.
 26. Delete todos os dados em que a `unit_price` da tabela `order_details` seja maior que 10.0000.
 27. Delete todos os dados da tabela `order_details`.
