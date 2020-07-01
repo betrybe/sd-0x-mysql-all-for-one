@@ -1,9 +1,27 @@
 const { readFileSync } = require('fs');
 const { Sequelize } = require('sequelize');
+const Importer = require('mysql-import');
+
 let sequelize;
 
-beforeAll(() => sequelize = new Sequelize('mysql://root:@localhost:3306/northwind'));
-afterAll(() => sequelize.close());
+beforeAll(async () => {
+  const importer = new Importer(
+    { user: process.env.MYSQL_USER, password: process.env.MYSQL_PASSWORD, host: process.env.HOSTNAME }
+  );
+
+  await importer.import('./northwind.sql');
+
+  importer.disconnect();
+
+  sequelize = new Sequelize(
+    `mysql://${process.env.MYSQL_USER}:${process.env.MYSQL_PASSWORD}@${process.env.HOSTNAME}:3306/northwind`
+  );
+});
+
+afterAll(async () => {
+  await sequelize.query('DROP DATABASE northwind;', { type: 'RAW' });
+  sequelize.close();
+});
 
 describe('Mostre todos os valores de `notes` da tabela `purchase_orders` que não são nulos', () => {
   it('Verifica o desafio9', async () => {
