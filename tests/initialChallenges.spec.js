@@ -1,9 +1,22 @@
 const { readFileSync } = require('fs');
 const { Sequelize } = require('sequelize');
+const Importer = require('mysql-import');
 
 let sequelize;
 
-beforeAll(() => sequelize = new Sequelize('mysql://root:password@mysql:3306/northwind'));
+beforeAll(async () => {
+  const host = 'mysql';
+  const user = 'root';
+  const password = 'password';
+  const database = 'northwind';
+  const importer = new Importer({
+    host,
+    user,
+    password,
+  });
+  await importer.import('./northwind.sql');
+  sequelize = new Sequelize(`mysql://${user}:${password}@${host}:3306/${database}`);
+});
 afterAll(() => sequelize.close());
 
 describe('Exiba apenas os nomes do produtos na tabela `products`', () => {
