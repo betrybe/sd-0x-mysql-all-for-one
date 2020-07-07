@@ -4,22 +4,6 @@ const Importer = require('mysql-import');
 
 let sequelize;
 
-
-// beforeAll(async () => {
-//   const host = 'mysql';
-//   const user = 'root';
-//   const password = 'password';
-//   const database = 'northwind';
-//   const importer = new Importer({
-//     host,
-//     user,
-//     password,
-//   });
-//   await importer.import('./northwind.sql');
-//   sequelize = new Sequelize(`mysql://${user}:${password}@${host}:3306/${database}`);
-// });
-// afterAll(() => sequelize.close());
-
 beforeAll(async () => {
   const importer = new Importer(
     { user: process.env.MYSQL_USER, password: process.env.MYSQL_PASSWORD, host: process.env.HOSTNAME }
