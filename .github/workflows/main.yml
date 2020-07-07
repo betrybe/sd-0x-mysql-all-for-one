@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Evaluator Step
-        uses: betrybe/jest-evaluator-action@v3
+        uses: betrybe/jest-evaluator-action@v4
         id: evaluator
         with:
           repository-test-name: ''
