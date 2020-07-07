@@ -5,19 +5,23 @@ const Importer = require('mysql-import');
 let sequelize;
 
 beforeAll(async () => {
-  const host = 'mysql';
-  const user = 'root';
-  const password = 'password';
-  const database = 'northwind';
-  const importer = new Importer({
-    host,
-    user,
-    password,
-  });
+  const importer = new Importer(
+    { user: process.env.MYSQL_USER, password: process.env.MYSQL_PASSWORD, host: process.env.HOSTNAME }
+  );
+
   await importer.import('./northwind.sql');
-  sequelize = new Sequelize(`mysql://${user}:${password}@${host}:3306/${database}`);
+
+  importer.disconnect();
+
+  sequelize = new Sequelize(
+    `mysql://${process.env.MYSQL_USER}:${process.env.MYSQL_PASSWORD}@${process.env.HOSTNAME}:3306/northwind`
+  );
 });
-afterAll(() => sequelize.close());
+
+afterAll(async () => {
+  await sequelize.query('DROP DATABASE northwind;', { type: 'RAW' });
+  sequelize.close();
+});
 
 describe('Exiba apenas os nomes do produtos na tabela `products`', () => {
   it('Verifica o desafio1', async () => {
