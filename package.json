@@ -4,7 +4,7 @@
   "description": "Project for Block 8",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --runInBand",
     "test:watch": "jest --watchAll"
   },
   "repository": {
