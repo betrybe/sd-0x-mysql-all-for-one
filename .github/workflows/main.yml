@@ -20,3 +20,7 @@ jobs:
         with:
           repository-test-name: ''
           repository-test-branch: ''
+        env:
+          MYSQL_USER: 'root'
+          MYSQL_PASSWORD: 'password'
+          HOSTNAME: 'mysql'
