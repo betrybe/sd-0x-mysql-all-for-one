@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Evaluator Step
-        uses: betrybe/mysql-evaluator-action@teste-configuracao
+        uses: betrybe/jest-evaluator-action@master
         id: evaluator
         with:
           repository-test-name: ''
