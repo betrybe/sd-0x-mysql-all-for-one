@@ -56,5 +56,29 @@
   }, {
     "description": "Quantos pedidos foram feitos na tabela `orders` pelo `employee_id` igual a 5 ou 6, e que foram enviados através do método `shipper_id` igual a 2? Chame a coluna de orders_count",
     "bonus": false
+  }, {
+    "description": "Adicione ao `order_details` uma linha com os seguintes dados: `order_id`: 69, `product_id`: 80, `quantity`: 15.0000, `unit_price`: 15.0000, `discount`: 0, `status_id`: 2, `date_allocated`: NULL, `purchase_order_id`: NULL e `inventory_id`: 129",
+    "bonus": false
+  }, {
+    "description": "Adicione, com um único `INSERT`, duas linhas ao `order_details` com os mesmos dados. Esses dados são novamente os mesmos do requisito 20",
+    "bonus": false
+  }, {
+    "description": "Atualize os dados de `discount` do `order_details` para 15",
+    "bonus": false
+  }, {
+    "description": "Atualize os dados de `discount` da tabela `order_details` para 30 cuja `unit_price` seja menor que 10.0000",
+    "bonus": false
+  }, {
+    "description": "Atualize os dados de `discount` da tabela `order_details` para 45 cuja `unit_price` seja maior que 10.0000 e o id seja um número entre 30 a 40",
+    "bonus": false
+  }, {
+    "description": "Delete todos os dados em que a `unit_price` da tabela `order_details` seja menor que 10.0000",
+    "bonus": false
+  }, {
+    "description": "Delete todos os dados em que a `unit_price` da tabela `order_details` seja maior que 10.0000",
+    "bonus": false
+  }, {
+    "description": "Delete todos os dados da tabela `order_details`",
+    "bonus": false
   }]
 }
