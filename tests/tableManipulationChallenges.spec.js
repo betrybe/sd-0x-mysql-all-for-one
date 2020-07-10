@@ -141,7 +141,7 @@ describe('Desafios de manipulação de tabelas', () => {
         expect(await sequelize.query(countOrderDetailsQuery, { type: 'SELECT' }))
           .toEqual([{ details_count: 58 }]);
 
-        await sequelize.query(challengeQuery, { type: 'UPDATE' });
+        await sequelize.query(challengeQuery, { type: 'DELETE' });
 
         expect(await sequelize.query(countOrderDetailsQuery, { type: 'SELECT' }))
           .toEqual([{ details_count: 41 }]);
@@ -155,7 +155,7 @@ describe('Desafios de manipulação de tabelas', () => {
         expect(await sequelize.query(countOrderDetailsQuery, { type: 'SELECT' }))
           .toEqual([{ details_count: 58 }]);
 
-        await sequelize.query(challengeQuery, { type: 'UPDATE' });
+        await sequelize.query(challengeQuery, { type: 'DELETE' });
 
         expect(await sequelize.query(countOrderDetailsQuery, { type: 'SELECT' }))
           .toEqual([{ details_count: 20 }]);
@@ -169,7 +169,7 @@ describe('Desafios de manipulação de tabelas', () => {
         expect(await sequelize.query(countOrderDetailsQuery, { type: 'SELECT' }))
           .toEqual([{ details_count: 58 }]);
 
-        await sequelize.query(challengeQuery, { type: 'UPDATE' });
+        await sequelize.query(challengeQuery, { type: 'DELETE' });
 
         expect(await sequelize.query(countOrderDetailsQuery, { type: 'SELECT' }))
           .toEqual([{ details_count: 0 }]);
