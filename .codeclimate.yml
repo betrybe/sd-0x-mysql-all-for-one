@@ -35,3 +35,8 @@ plugins:
     enabled: true
   fixme:
     enabled: true
+exclude_patterns:
+  - "northwind.sql"
+  - "images/"
+  - "tests/"
+  - "node_modules/"
