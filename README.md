@@ -11,7 +11,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 ### ANTES DE COMEÇAR A DESENVOLVER:
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-0x-mysql-all-for-one`.
+  * `git clone https://github.com/tryber/sd-0x-mysql-all-for-one.git`.
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-0x-mysql-all-for-one`
 
@@ -106,6 +106,24 @@ Hoje você fará um projeto com o codinome *All For One* em que praticará todos
 
     ![Drop Schema](images/drop_database.png)
 
+---
+
+## Implementações técnicas
+
+Para executar localmente os testes, é preciso escrever o seguinte no seu terminal:
+```sh
+MYSQL_USER=<SEU_NOME_DE_PESSOA_USUARIA> MYSQL_PASSWORD=<SUA SENHA> HOSTNAME=<NOME_DO_HOST> npm test
+```
+
+Ou seja, suponha que para poder acessar a base de dados feita neste projeto você tenha `root` como seu nome de pessoa usuária, `password` como senha e `localhost` como host. Logo, você executaria:
+```sh
+MYSQL_USER=root MYSQL_PASSWORD=password HOSTNAME=localhost npm test
+```
+
+Usando o exemplo anterior de base, suponha que você não tenha setado uma senha para `root`. Neste caso, você executaria:
+```sh
+MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost npm test
+  ```
 ---
 
 # Requisitos do projeto
