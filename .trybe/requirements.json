@@ -18,7 +18,7 @@
     "description": "Exiba os dados das colunas `product_name` e `id` da tabela `products` de maneira que os resultados estejam em ordem alfabética dos nomes",
     "bonus": false
   }, {
-    "description": "Mostre apenas os ids dos 5 últimos registros da tabela da tabela `products` (a ordernação deve ser baseada na coluna `id`).",
+    "description": "Mostre apenas os ids dos 5 últimos registros da tabela da tabela `products` (a ordernação deve ser baseada na coluna `id`)",
     "bonus": false
   }, {
     "description": "Faça uma consulta que retorne três colunas contendo os nomes `A`, `Trybe` e `eh` com os valores `5 + 6`, `\"de\"` e `2 + 8`, respectivamente",
