@@ -174,6 +174,8 @@ Monte queries para encontrar as seguintes informações:
 
 ### DURANTE O DESENVOLVIMENTO
 
+⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo CodeClimate estão resolvidas! ⚠
+
 * Faça `commits` das alterações que você fizer no código regularmente
 
 * Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
