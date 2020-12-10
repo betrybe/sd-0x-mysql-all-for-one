@@ -60,7 +60,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 Temos, nesse projeto, uma série de desafios com diferentes níveis de complexidade que devem ser resolvidos cada um em seu arquivo próprio.
 
-1. Leia a pergunta e crie um arquivo chamado `desafioN.sql`, em que N é o número do desafio;
+1. Leia a pergunta e crie na raiz do projeto um arquivo chamado `desafioN.sql`, em que N é o número do desafio;
 
 2. O arquivo deve conter apenas o código SQL do desafio resolvido. **Não se esqueça de incluir o ponto e vírgula (";")** no final de suas queries e também de colocar o nome do **banco_de_dados.tabela_por_completo**, como no exemplo a seguir:
 ```sql
@@ -71,7 +71,7 @@ SELECT * FROM northwind.orders;
 
 4. Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório. Este _Pull Request_ deverá conter os arquivos `desafio1.sql`, `desafio2.sql` e assim por diante até o `desafio27.sql`, que conterão seu código `SQL` de cada desafio, respectivamente.
 
-## ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
+## ⚠️ É importante que seus arquivos tenham exatamente estes nomes e na pasta raiz do projeto! ⚠️
 
 Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, procure a monitoria.
 
