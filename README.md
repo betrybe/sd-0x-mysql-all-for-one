@@ -280,7 +280,7 @@ Monte queries para encontrar as informações esperadas pelos desafios:
 
 ---
 
-# Depois de terminar o desenvolvimento (OPCIONAL)
+## Depois de terminar o desenvolvimento
 
 Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
 
