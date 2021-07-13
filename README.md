@@ -246,7 +246,7 @@ Monte queries para encontrar as informações esperadas pelos desafios:
 
 #### 13 - Mostre o resultado da coluna `supplier_id` da tabela `purchase_orders` em que o `supplier_id` seja 1 ou 3.
 
-#### 14 - Mostre os resultados da coluna `supplier_id` da tabela `purchase_orders` em que o `supplier_id` esteja entre os valores de 1 a 3, incluindo tanto o 1 quanto o 3.
+#### 14 - Mostre os resultados da coluna `supplier_id` da tabela `purchase_orders` em que o `supplier_id` esteja entre os valores 1 e 3, incluindo tanto o 1 quanto o 3.
 
 #### 15 - Mostre somente as horas (sem os minutos e os segundos) da coluna `submitted_date` de todos registros da tabela `purchase_orders`. Chame essa coluna de `submitted_hour`.
 
