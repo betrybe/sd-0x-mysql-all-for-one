@@ -150,9 +150,24 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
 
 ---
 
+# Entregáveis
+
+Temos, nesse projeto, uma série de desafios com diferentes níveis de complexidade que devem ser resolvidos cada um em seu arquivo próprio.
+
+1. Leia a pergunta e crie na raiz do projeto um arquivo chamado `desafioN.sql`, em que N é o número do desafio;
+
+2. O arquivo deve conter apenas o código SQL do desafio resolvido. **Não se esqueça de incluir o ponto e vírgula (";")** no final de suas queries e também de colocar o nome do **banco_de_dados.tabela_por_completo**, como no exemplo a seguir:
+```sql
+SELECT * FROM northwind.orders;
+```
+
+3. Faça isso até finalizar todos os desafios.
+=======
 ## Durante o desenvolvimento
 
 ⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo CodeClimate estão resolvidas! ⚠
+
+## ⚠️ É importante que seus arquivos tenham exatamente estes nomes e esteja na raiz do projeto! ⚠️
 
 * Faça `commits` das alterações que você fizer no código regularmente
 
